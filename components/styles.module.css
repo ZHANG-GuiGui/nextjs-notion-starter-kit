@@ -101,6 +101,14 @@
   color: #0077b5;
 }
 
+.facebook:hover {
+  color: #4267B2;
+}
+
+.wechat:hover{
+  color: #2dc100;
+}
+
 .comments {
   width: 100%;
   margin-top: 2em;
