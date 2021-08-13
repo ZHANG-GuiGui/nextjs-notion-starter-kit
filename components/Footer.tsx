@@ -57,7 +57,7 @@ export const Footer: React.FC<{
         {config.facebook && (
           <a
             className={styles.facebook}
-            href={`https://github.com/${config.facebook}`}
+            href={`https://facebook.com/${config.facebook}`}
             title={`Facebook @${config.facebook}`}
             target='_blank'
             rel='noopener noreferrer'
