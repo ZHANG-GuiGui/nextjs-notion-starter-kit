@@ -124,7 +124,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const isBlogPost =
     block.type === 'page' && block.parent_table === 'collection'
   const showTableOfContents = !!isBlogPost
-  const minTableOfContentsItems = 3
+  const minTableOfContentsItems = 4
 
   const socialImage = mapNotionImageUrl(
     (block as PageBlock).format?.page_cover || config.defaultPageCover,
@@ -155,7 +155,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
       pageAside = <PageActions tweet={tweet} />
     }
   } else {
-    // pageAside = <PageSocial />
+    pageAside = <PageSocial />
   }
 
   return (
@@ -267,7 +267,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         mapImageUrl={mapNotionImageUrl}
         searchNotion={searchNotion}
         pageFooter={comments}
-        pageAside={pageAside}
+        // pageAside={pageAside}
         footer={
           <Footer
             isDarkMode={darkMode.value}
