@@ -275,6 +275,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
           />
         }
       />
+      <a onclick="pageScroll()">back to top</a>
 
 {/*      <GitHubShareButton />*/}
     </TwitterContextProvider>
